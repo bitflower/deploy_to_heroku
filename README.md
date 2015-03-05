@@ -20,8 +20,12 @@ $ heroku config:set MONGOLAB_URI=mongodb://USER:PW@HOST:PORT/DB
 
 # Helper
 
-1. Clean a heroku repository with this plugin:
+Clean a heroku repository with this plugin:
 https://github.com/heroku/heroku-repo
+
+Steps:
+1. Run heroku plugins:install https://github.com/lstoll/heroku-repo.git
+2. heroku repo:reset -a APP_NAME
 
 Description can be found here:
 https://coderwall.com/p/okrlzg/take-control-of-your-heroku-git-repository
