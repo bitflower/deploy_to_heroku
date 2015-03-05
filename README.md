@@ -9,5 +9,19 @@ Notes to myself
 4. Setup a heroku remote: heroku git:remote -a APP_NAME
 5. git push heroku master
 
+# Configuration of heroku app
+
+1. Setting up environment variables (or use the heroku admin):
+$ heroku config:set NODE_ENV=production
+$ heroku config:set NODE_PATH=lib
+
+Additionally if a MongoDB is used set the MongoLab or ComposeIO Connection string:
+$ heroku config:set MONGOLAB_URI=mongodb://USER:PW@HOST:PORT/DB
+
 # Helper
 
+1. Clean a heroku repository with this plugin:
+https://github.com/heroku/heroku-repo
+
+Description can be found here:
+https://coderwall.com/p/okrlzg/take-control-of-your-heroku-git-repository
